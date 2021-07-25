@@ -48,6 +48,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .logo {
+    display: inline-flex;
+  }
   .desktop-menu {
     display: none;
   }
@@ -66,25 +69,8 @@
     width: 90%;
     margin-bottom: 7px;
   }
-  .search-btn,
-  .hamburger-btn {
-    border: none;
-    background: none;
-    cursor: pointer;
-    svg {
-      width: 17px;
-      height: 17px;
-    }
-    &:hover {
-      svg {
-        g {
-          fill: #bbd547;
-        }
-      }
-    }
-  }
 }
-@media (min-width: 479px) {
+@media (min-width: 480px) {
   .header {
     nav {
       width: 50%;
@@ -94,9 +80,6 @@
     }
     .tablet-menu {
       display: block;
-    }
-    .hamburger-btn {
-      display: none;
     }
   }
 }
@@ -109,8 +92,7 @@
         justify-content: unset;
       }
     }
-    .tablet-menu,
-    .hamburger-btn {
+    .tablet-menu {
       display: none;
     }
     .desktop-menu {

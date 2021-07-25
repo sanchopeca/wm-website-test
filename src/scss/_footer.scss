@@ -1,9 +1,10 @@
 .footer {
+  --pad-hr: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #dbdbdb;
-  padding: 10px 40px;
+  padding: 10px var(--pad-hr);
   &__menu {
     display: flex;
     a {
@@ -45,6 +46,11 @@
         color: #6d6e71;
         &:hover {
           color: $clightgreen;
+          svg {
+            g {
+              fill: $clightgreen;
+            }
+          }
         }
       }
     }
@@ -57,9 +63,15 @@
     height: 23px;
   }
 }
-
-@media (min-width: 767px) {
+@media (min-width: 480px) {
   .footer {
+    --pad-hr: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    --pad-hr: 38px;
     nav {
       display: block;
     }

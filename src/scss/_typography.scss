@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'DINPro';
+  src: url('/fonts/DINPro-Regular.woff2') format('woff2'),
+    url('/fonts/DINPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  font-size: 17px;
+}
+h2 {
+  font-size: 26.95px;
+  color: $csec;
+}
+h6 {
+  font-size: 15px;
+}
+p {
+  font-size: 13px;
+}

@@ -131,15 +131,25 @@ table {
 /* END CSS RESET */
 
 body {
+  font-family: 'DINPro', sans-serif;
+  color: $cdef;
   background: #fff;
 }
-button {
-  &:hover {
-    color: $clightgreen;
-    svg {
-      g {
-        fill: $clightgreen;
-      }
-    }
+section {
+  margin-bottom: 55px;
+}
+.container {
+  width: 168px;
+  margin: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 415px;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 80px;
   }
 }

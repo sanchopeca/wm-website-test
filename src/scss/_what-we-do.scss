@@ -1,0 +1,28 @@
+.what-we-do {
+  &__outter-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 794px;
+  }
+  &__col:first-child {
+    margin-bottom: 25px;
+  }
+  .img-btn-wrap:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 480px) {
+  .what-we-do {
+    &__inner-wrap {
+      display: flex;
+    }
+    &__col:first-child {
+      margin-bottom: 0;
+    }
+    .img-btn-wrap:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}

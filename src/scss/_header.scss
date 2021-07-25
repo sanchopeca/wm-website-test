@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   text-align: center;
   nav {
     ul {
@@ -66,11 +67,14 @@
   .search-input {
     width: 90%;
     margin-bottom: 7px;
+
+    &:not(.search-open) {
+      display: none;
+    }
   }
 }
 @media (max-width: 479px) {
   .header {
-    position: relative;
     .logo,
     .hamburger-btn,
     .search-btn,
@@ -158,6 +162,12 @@
     .desktop-menu {
       display: none;
     }
+  }
+  .search-input {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    max-width: 300px;
   }
 }
 

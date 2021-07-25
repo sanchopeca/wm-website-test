@@ -14,5 +14,14 @@ const hamburgerBtn = document.querySelector('.hamburger-btn');
 const header = document.querySelector('header');
 
 hamburgerBtn.addEventListener('click', () => {
-  header.classList.toggle('menu-open')
+  header.classList.toggle('menu-open');
+})
+
+// search logic
+
+const searchBtn = document.querySelector('.search-btn');
+const searchInput = document.querySelector('.search-input');
+
+searchBtn.addEventListener('click', () => {
+  searchInput.classList.toggle('search-open');
 })

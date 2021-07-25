@@ -134,6 +134,8 @@ body {
   font-family: 'DINPro', sans-serif;
   color: $cdef;
   background: #fff;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 section {
   margin-bottom: 55px;

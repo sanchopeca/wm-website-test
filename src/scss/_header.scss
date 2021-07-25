@@ -1,43 +1,44 @@
 .header {
   text-align: center;
-  ul {
-    display: flex;
-    align-items: center;
-  }
-  a {
-    text-decoration: none;
-    &:link {
-      color: $cgrey;
-    }
-    &:visited {
-      color: $cdarkblue;
-      svg {
-        g {
-          fill: $cdarkblue;
+  nav {
+    ul {
+      display: flex;
+      a {
+        text-decoration: none;
+        &:link {
+          color: $cgrey;
         }
-      }
-    }
-    &:focus {
-      color: $clightblue;
-      svg {
-        g {
-          fill: $clightblue;
+        // &:visited {
+        //   color: $cdarkblue;
+        //   svg {
+        //     g {
+        //       fill: $cdarkblue;
+        //     }
+        //   }
+        // }
+        &:focus {
+          color: $clightblue;
+          svg {
+            g {
+              fill: $clightblue;
+            }
+          }
         }
-      }
-    }
-    &:hover {
-      color: $clightgreen;
-      svg {
-        g {
-          fill: $clightgreen;
+        &:hover {
+          color: $clightgreen;
+          svg {
+            g {
+              fill: $clightgreen;
+            }
+          }
         }
-      }
-    }
-    &:active {
-      color: $cdarkgreen;
-      svg {
-        g {
-          fill: $cdarkgreen;
+        &:active {
+          color: $cdarkgreen;
+          svg {
+            g {
+              fill: $cdarkgreen;
+            }
+          }
         }
       }
     }
@@ -50,9 +51,6 @@
   }
   .logo {
     display: inline-flex;
-  }
-  .desktop-menu {
-    display: none;
   }
   .tablet-menu {
     display: none;
@@ -68,6 +66,53 @@
   .search-input {
     width: 90%;
     margin-bottom: 7px;
+  }
+}
+@media (max-width: 479px) {
+  .header {
+    position: relative;
+    nav {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+
+      ul {
+        flex-direction: column;
+        text-align: left;
+        li {
+          width: 100%;
+          a {
+            color: $cwhite;
+            display: block;
+            padding: 5px 15px;
+          }
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #e5eebe;
+          }
+          &:nth-child(1) {
+            a {
+              background-color: $clightgreen;
+            }
+          }
+          &:nth-child(2) {
+            a {
+              background-color: $cdarkgreen;
+            }
+          }
+          &:nth-child(3) {
+            a {
+              background-color: $clightblue;
+            }
+          }
+          &:nth-child(4) {
+            a {
+              background-color: $cdarkblue;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 480px) {

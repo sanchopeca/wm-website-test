@@ -6,9 +6,7 @@
       display: flex;
       a {
         text-decoration: none;
-        &:link {
-          color: $cgrey;
-        }
+        color: $cgrey;
         // &:visited {
         //   color: $cdarkblue;
         //   svg {
@@ -67,6 +65,8 @@
   .search-input {
     width: 90%;
     margin-bottom: 7px;
+    border: 1px solid #d8d8d8;
+    outline-color: $clightgreen;
 
     &:not(.search-open) {
       display: none;
@@ -81,7 +81,7 @@
     .search-input,
     .gradient {
       position: relative;
-      z-index: 1;
+      z-index: 3;
     }
     &:after {
       position: absolute;
@@ -91,6 +91,7 @@
       width: 100%;
       height: 100%;
       background-color: $cwhite;
+      z-index: 2;
     }
     nav {
       position: absolute;
@@ -100,6 +101,7 @@
       background-color: $cwhite;
       transform: translateY(-100%);
       transition: transform 0.3s ease-in;
+      z-index: 2;
 
       ul {
         flex-direction: column;
@@ -168,6 +170,8 @@
     bottom: -20px;
     right: 20px;
     max-width: 300px;
+    z-index: 2;
+    padding: 8px;
   }
 }
 

@@ -6,6 +6,7 @@
   }
   &__body {
     display: none;
+    max-width: 187px;
   }
   &__title {
     margin-top: 8px;
@@ -16,7 +17,11 @@
     flex-direction: column;
   }
   .link-btn {
+    margin-top: auto;
+    align-self: flex-end;
+    text-align: center;
     margin-left: auto;
+    max-width: 66px;
   }
 }
 h2 {

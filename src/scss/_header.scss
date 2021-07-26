@@ -14,7 +14,7 @@
         //       fill: $cdarkblue;
         //     }
         //   }
-        // }
+        // } commented because default state doesn't properly work when it is on
         &:focus {
           color: $clightblue;
           svg {
@@ -67,6 +67,7 @@
     margin-bottom: 7px;
     border: 1px solid #d8d8d8;
     outline-color: $clightgreen;
+    box-shadow: none;
 
     &:not(.search-open) {
       display: none;

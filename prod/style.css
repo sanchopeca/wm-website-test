@@ -88,7 +88,7 @@ button:hover svg g { fill: #bbd547; }
 
 .header .gradient { height: 8px; background: -webkit-gradient(linear, left top, right top, from(#b9d449), color-stop(100%, #1476b8), color-stop(100%, black), to(rgba(224, 215, 201, 0))); background: linear-gradient(90deg, #b9d449 0%, #1476b8 100%, black 100%, rgba(224, 215, 201, 0) 100%); }
 
-.header .search-input { width: 90%; margin-bottom: 7px; border: 1px solid #d8d8d8; outline-color: #bbd547; }
+.header .search-input { width: 90%; margin-bottom: 7px; border: 1px solid #d8d8d8; outline-color: #bbd547; -webkit-box-shadow: none; box-shadow: none; }
 
 .header .search-input:not(.search-open) { display: none; }
 
@@ -167,7 +167,7 @@ button:hover svg g { fill: #bbd547; }
 
 .hero .swiper-container .swiper-slide img { width: 99px; height: auto; }
 
-.hero .swiper-container .swiper-slide__inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #f3f3f3; background-image: url(/assets/hero/hero-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: contain; height: 117px; padding-top: 11px; }
+.hero .swiper-container .swiper-slide__inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #f3f3f3; background-image: url(../assets/hero/hero-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: contain; height: 117px; padding-top: 11px; }
 
 .hero .swiper-container .swiper-slide__inner h1 { text-align: center; position: relative; -webkit-transform: translateY(34px); -ms-transform: translateY(34px); transform: translateY(34px); font-family: 18px; text-transform: uppercase; }
 
